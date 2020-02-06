@@ -1,0 +1,12 @@
+{
+  "paths": {
+    "wow": "",
+    "uiConfig" : "",
+    "backups": ""
+  },
+  "account": {
+    "name": "",
+    "realm" : "",
+    "characters": []
+  }
+}
