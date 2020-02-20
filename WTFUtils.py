@@ -59,17 +59,19 @@ class Application(QWidget):
         self.wowPath.picker.clicked.connect(self.setWowPath)
         self.backupPath.picker.clicked.connect(self.setBackupPath)
 
+        self.character.editingFinished.connect(self.setCharacter)
+
     @Slot()
     def setRealm(self):
         self.config.setValue("realm", self.realm.text())
 
     @Slot()
     def setCharacter(self):
-        self.config.setValue("character", self.realm.text())
+        self.config.setValue("character", self.character.text())
 
     @Slot()
     def setAccountname(self):
-        self.config.setValue("accountname", self.realm.text())
+        self.config.setValue("accountname", self.accountname.text())
 
     @Slot()
     def setCopyPath(self):
